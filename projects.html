@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-yJa+c4XzndY1nGHYfybFhOJQ0GM6E9yPblKHlKltMQNn5CvRk9wQj3j7LcxM6u/pYfQ9XLyk29LfTwp2CRMeLQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/jpeg"
+      href="profile.jpeg"
+      width="150"
+      style="border-radius: 50%"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar">
+      <button id="close-sidebar">&times;</button>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">SALMA</div>
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="mobile-menu-btn">☰</button>
+        <div class="social-icons hidden">
+          <a href="https://www.behance.net/salmaiqbal33"
+            ><i class="fab fa-behance"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/salma-iqbal-09735532a/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://web.facebook.com/salmaiqbal24?rdid=9nDa7x9lStOlANjY#"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <div class="container" style="margin-top: 30px">
+      <div class="section-title">
+        <h2>MY PROJECTS</h2>
+        <h3>
+          Here are some of my finest projects—crafted with passion, precision,
+          and a touch of creativity!
+        </h3>
+      </div>
+      <div class="projects-grid"></div>
+    </div>
+    <!-- Modal -->
+    <div class="modal" id="projectModal">
+      <div class="modal-content">
+        <img id="modalImage" src="/placeholder.svg" alt="Project Image" />
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div class="modal-actions">
+          <a
+            id="projectLink"
+            href="#"
+            style="display: none"
+            class="btn btn-primary"
+            >View Project</a
+          >
+          <button id="closeModal" class="btn btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+    <button
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: var(--secondary-color);
+        color: azure;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 50%;
+      "
+    >
+      ↑
+    </button>
+    <footer style="margin-top: 50px">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 SALMA. All Rights Reserved.</p>
+          <div class="social-links">
+            <a href="https://www.behance.net/salmaiqbal33"
+              ><i class="fab fa-behance"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/salma-iqbal-09735532a/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://web.facebook.com/salmaiqbal24?rdid=9nDa7x9lStOlANjY#"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="projects.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
