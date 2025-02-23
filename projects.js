@@ -10,7 +10,7 @@ const projects = [
     description: "Professionally crafted UI/UX designs for seamless experiences..",
     image: "32 (2).jpeg",
     category: "Menu",
-  },
+  }, 
   {
     title: "Webpage UI",
     description: "Professionally crafted UI/UX designs for seamless experiences.",
